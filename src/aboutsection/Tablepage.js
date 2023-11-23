@@ -1,5 +1,6 @@
 import React from 'react'
 import {personalInfo} from './Personalinfo'
+import './About.css'
 const Tablepage = () => {
   return (
     <>

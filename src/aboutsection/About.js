@@ -1,6 +1,6 @@
 import React from 'react'
 import Img from '../assets/profilepic.jpg'
-import Resume from '../assets/Disha_Gupta_resume.pdf'
+import Resume from '../assets/latest Pers_Resume 1.pdf'
 import Introdetails from './Introdetails'
 import './About.css'
 import Tablepage from './Tablepage'

@@ -6,10 +6,10 @@ const Qualification = () => {
         setToggleState(index);
     };
     return (
-        <section className="qualification section">
+        <section className="qualification section" id='qualification'>
             <h2 className='section__title'> Qualification</h2>
             <span className="section__subtitle">
-                My Personal Journey
+                My Journey
             </span>
             <div className="qualification__container container">
                 <div className="qualification__tabs">
@@ -102,29 +102,28 @@ const Qualification = () => {
                         </div>
                     </div>
                     <div className={toggleState === 2 ? "qualification__content qualification__content-active" : "qualification__content"} >
-                        <div className="qualification__data">
+                    <div className="qualification__data">
 
-                            <div>
-                                <h3 className="qualification__title">
-                                    NA 
-                                </h3>
-                                <span className="qualification__subtitle"> NA
-                                </span><div className="qualification__calendar">
-                                    <i className="uil uil-calendar-alt">
-                                    </i>
-                                     Present
-                                </div>
+<div>
+    <h3 className="qualification__title">
+        Frontend Dev Internship
+    </h3>
+    <span className="qualification__subtitle">Lueuer Tech software Solution
+    </span><div className="qualification__calendar">
+        <i className="uil uil-calendar-alt">
+        </i>
+        Jan'23-Mar'23
+    </div>
+</div>
+<div>
+    <span className="qualification__rounder">
 
-                            </div>
-                            <div>
-                                <span className="qualification__rounder">
+    </span>
+    <span className="qualification__line">
 
-                                </span>
-                                <span className="qualification__line">
-
-                                </span>
-                            </div>
-                        </div>
+    </span>
+</div>
+</div>
                     </div>
                 </div>
             </div>

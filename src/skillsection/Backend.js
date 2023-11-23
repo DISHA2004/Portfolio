@@ -13,7 +13,7 @@ Backend Developement
                 <i class="uil uil-award"></i>
                 <div>
                     <h3 className="skills__name">
-Python
+Node.js
                     </h3>
                     <span className="skills__level">
 Advanced
@@ -24,10 +24,10 @@ Advanced
                 <i class="uil uil-award"></i>
                 <div>
                     <h3 className="skills__name">
-Django
+Express.js
                     </h3>
                     <span className="skills__level">
-                        Intermediate
+                        Advanced
                     </span>
                 </div>
                 </div>

@@ -3,7 +3,7 @@ import React from 'react'
 const Sectionpart = () => {
   return (
     <div className="home__social">
-        <a href="https://www.instagram.com/" className="home__social-icon" target='_blank'>
+        <a href="https://msng.link/o?_dishagp_=ig" className="home__social-icon" target='_blank'>
         <i class="uil uil-instagram-alt"></i>
         </a>
         <a href="https://github.com/DISHA2004" className="home__social-icon" target='_blank'>

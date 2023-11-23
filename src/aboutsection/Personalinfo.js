@@ -18,11 +18,11 @@ export const personalInfo=[
     {
         id:4,
         title: 'Nationality :',
-        description: '  Indian',
+        description: ' Indian',
     },
     {
         id:5,
-        title: 'Address :',
+        title: 'Locality :',
         description: '  Etah',
     },
     {

@@ -1,6 +1,18 @@
-import React from 'react'
+import React, { useRef } from 'react';
+import emailjs from '@emailjs/browser';
+import '../contact/Contact.css'
 
 const Contact = () => {
+    const form = useRef();
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs.sendForm('service_9levku9', 
+    'template_q3aqs04', form.current, 
+    'u6kVm1-Kpqr9xMlFi')
+      e.target.reset()
+  };
   return (
     <section className="contact section" id="contact">
         <h2 className="section__title">Get in touch</h2>
@@ -33,7 +45,7 @@ const Contact = () => {
                         +91 7820046192
                         </span>
 
-                        <a href="" className="contact__button">Write me 
+                        <a href="https://api.whatsapp.com/send?phone=7820046192&text=Hey, there" className="contact__button">Write me 
                         <i className="bx bx-right-arrow-alt contact__button-icon">
                             
                         </i> </a>
@@ -48,7 +60,7 @@ const Contact = () => {
                         _dishagp_
                         </span>
 
-                        <a href="" className="contact__button">Write me 
+                        <a href="https://msng.link/o?_dishagp_=ig" className="contact__button">Write me 
                         <i className="bx bx-right-arrow-alt contact__button-icon">
                             
                         </i> </a>
@@ -57,21 +69,30 @@ const Contact = () => {
             </div>
             <div className="contact__content">
                 <h3 className="contact__title">Write your Project</h3>
-                <form className="contact__form">
-                    <div className="contact__form-div">
+                <form ref={form} onSubmit={sendEmail} className="contact__form">
+                    <div className="contact__form-div ">
                         <label className="contact__form-tag">Email</label>
-                        <input type='email' name='mail' 
+                        <input type='email' name='email' 
                         className='contact__form-input'
                             placeholder='Insert mail address'
                         />
                     </div>
                     <div className="contact__form-div">
                         <label className="contact__form-tag">Name</label>
-                        <input type='text' name='name' 
+                        <input type='name' name='name' 
                         className='contact__form-input'
-                            placeholder='Insert name'
+                            placeholder='Insert your name here'
                         />
                     </div>
+                    <div className="contact__form-div contact__form-area">
+                        <label className="contact__form-tag">Project</label>
+                        <textarea name="project" 
+                         cols="30" rows="10" className='contact__form-input'
+                            placeholder='write your project'></textarea>
+                    </div>
+                    <button className="button button--flex">
+                        Send your message! <i class="uil uil-message"></i>
+                    </button>
                 </form>
             </div>
         </div>
